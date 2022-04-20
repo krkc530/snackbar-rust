@@ -1,39 +1,30 @@
 {
-  "name": "now-ui-dashboard-react",
-  "version": "1.5.0",
-  "main": "dist/index.js",
+  "name": "frontend",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "bootstrap": "4.6.0",
-    "chart.js": "3.2.1",
-    "gulp": "4.0.2",
-    "gulp-append-prepend": "1.0.9",
-    "node-sass": "6.0.0",
-    "perfect-scrollbar": "1.5.1",
-    "react": "17.0.2",
-    "react-chartjs-2": "3.0.3",
-    "react-dom": "17.0.2",
-    "react-notification-alert": "0.0.13",
-    "react-router": "5.2.0",
-    "react-router-dom": "5.2.0",
-    "react-scripts": "4.0.3",
-    "reactstrap": "8.9.0",
-    "axios": "0.26.1"
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "^4.19.5",
+    "axios": "^0.26.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "PORT=3001 react-scripts start",
-    "build": "react-scripts build && gulp licenses",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
-    "compile-sass": "node-sass src/assets/scss/now-ui-dashboard.scss src/assets/css/now-ui-dashboard.css",
-    "minify-sass": "node-sass src/assets/scss/now-ui-dashboard.scss src/assets/css/now-ui-dashboard.min.css --output-style compressed",
-    "map-sass": "node-sass src/assets/scss/now-ui-dashboard.scss src/assets/css/now-ui-dashboard.css --source-map true"
+    "eject": "react-scripts eject"
   },
-  "optionalDependencies": {
-    "@babel/core": "7.14.3",
-    "jquery": "3.6.0",
-    "typescript": "4.2.4"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
